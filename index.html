@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e6f52e1017.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!----navigation---->
+    <div id="headers">
+    <div class="navigation">
+        <nav class="name1">
+            <h1 class="name"><span>PREM</span> SAI</h1>
+            <ul id="sidemenu">
+                <li><a href="#headers">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#resume">Resume</a></li>
+                
+            </ul>
+        </nav>
+        <div class="header">
+            <p><b>Software Intern</b></p>
+            <h2>Hi, I'm <span>Prem Sai</span><br> from vizianagaram</h2>
+        </div>
+    </div>
+    </div>
+    <!-------about------>
+    <div id="about">
+        <div class="container-about">
+            <div class="row">
+                <div class="column-1">
+                    <img src="image/photo.jpg">
+                </div>
+                <div class="column-2">
+                    <h1 class="title">About Me</h1>
+                    <p>I am prem sai boni and i am from vizianagaram.Currently i am pursing b-tech in Lendi Institute Of
+                        engineering and technology in the stream of computer science and system engineering.I have
+                        completed my intermediate in narayana junior college vishakapatanam and my schooling in 
+                        new central school vizianagaram.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+                        
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <div class="skils">
+                            <p class="skils-up"><span>Frontend</span></p>
+                            <ul class="skils-down">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JAVASCRIPT</li>
+                            </ul>                                             
+                        </div>
+                        <div class="skils">
+                            <p class="skils-up"><span>Backend</span></p>
+                                <ul class="skils-down">
+                                    <li>Python</li>
+                                    <li>SQL</li>
+                                    <li>DBMS</li>
+                                </ul>
+                        </div>                       
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>b-tech [2021-2025]</span><br><p class="course">LIET</p></li><br>
+                            <li><span>intermediate [2019-2021]</span><br><p class="course">Narayana junior college</p></li><br>
+                            <li><span>School [2019]</span><br><p class="course">New Central School</p></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="hobbies">
+                        <ul>
+                            <li class="hobby">Playing Games</li>
+                            <li class="hobby">Watching TV</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----projects------>
+    <div id="projects">
+        <div class="container">
+            <h1 class="title">My Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h1>todo-list </h1><br>
+                    <p>A to-do list using django webframework, it is like a digital version of a paper list where you write down tasks you
+                       need to do. However, instead of using pen and paper, it's created using computer programming.
+                       It's a handy tool for keeping track of what needs to be done 
+                       and staying organized in daily life or work.</p>
+                    
+                </div>
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <h1>Portfolio</h1><br>
+                    <p>A simple portfolio website using HTML, CSS, Javascript, portfolio is an online showcase of our
+                        skills, projects, and experiences.It's a digital platform where you can display examples of our work, 
+                        such as design projects, writing samples, or coding projects.It's a professional way to present ourself 
+                        and our work to the world.</p>
+                    
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h1>Calculator</h1><br>
+                    <p>A calculator project using Python libraries that created to perform mathematical calculations.
+                        By using calculator, simple operations can be performed on numbers and
+                        produces the result.
+                        It takes user input,such as numbers and arithmetic operation like addition, 
+                        multiplication<br> and then produces the result of the calculation.
+                    </p>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!------contact------>
+    <div id="contact">
+        <div class="container-contact">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>bonipremsai@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/prem-sai-boni-0636212ba"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/bonipremsai"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.facebook.com/prem.boni.921"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/_alone_walker_143_"><i class="fa-brands fa-instagram"></i></a>
+                    </div><br><br><br><br>
+                    <div id="resume"><a href="" class="btn btn2">Download Cv</a></div> 
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email " name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea><br>
+                        <p><button type="submit" class="btn">Submit</button></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+    
+</body>
+</html>
